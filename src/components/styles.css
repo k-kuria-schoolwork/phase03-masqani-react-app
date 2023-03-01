@@ -43,6 +43,33 @@ h1{
     margin-top: 10px;
     
 }
+
+.addheader1{
+    padding-bottom: 20px;
+    
+}
+
+.formcont1{
+    background-color: rgba(0, 0, 10, 0.096);
+    border-radius: 20px;
+    padding-left: 30px;
+    padding-right: 5px;
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-right: 50px;
+    font-family: 'Gloock', serif;
+    font-family: 'Shantell Sans', cursive;
+    color: rgba(60, 60, 209, 0.753);
+    font-weight: bolder;
+}
+.jina{
+    color: brown;
+    font-size: 25px;
+    
+
+}
+
+
 h2{
     text-align: center;
 }
