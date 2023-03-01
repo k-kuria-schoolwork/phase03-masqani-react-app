@@ -3,6 +3,7 @@ import React from "react"
 function About(){
     return (
         <div>
+          <div></div>
           <h1>ABOUT US</h1>
           <p>Our mission is to provide the best possible real estate services to our clients, with integrity, professionalism, and attention to detail.</p>
           <p>With years of experience in the industry, our team is dedicated to helping our clients buy and sell properties that meet their unique needs and exceed their expectations.</p>
