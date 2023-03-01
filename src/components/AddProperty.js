@@ -2,9 +2,9 @@ import React from "react"
 
 function AddProperty(){
     return(
-        <div className="formcont1">
+        <div>
             <div  className="addheader1">
-             <h1 className="jina">ADD PROPERTY FOR SALE</h1>
+             ADD PROPERTY IN THIS PAGE
              </div>
             <div className="formcont">
             <form class="row g-3">
