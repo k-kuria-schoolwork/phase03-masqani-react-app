@@ -80,15 +80,15 @@ function Home() {
     });
   };
   return (
-    <div className="card-row "width="700" height="500" style={{ display: 'flex', flexWrap:"wrap" }}>
+    <div className="card-row "width="700" height="500" style={{ display: 'flex', flexWrap:"wrap"}}>
       
       {arts.map(art => (
-        <div className='col-4'>
-        <div className="card " style={{ width: '35rem' }} key={art.id}>
+        <div className='col-4' style={{marginTop: '30px'}}>
+        <div className="card " style={{ width: '35rem'}} key={art.id}>
           <img width="700" height="500"className="card-img-top" src={art.urls.regular} alt="Art" />
           <div className="card-body">
             <h5 className="card-title">{art.alt_description}</h5>
-            <p className="card-text">{art.description}</p>
+            {/* <p className="card-text">{art.description}</p> */}
             <h2>ID: {art.id}</h2>
             <p>Created at: {art.created_at}</p>
             <p>Color: {art.color}</p>
