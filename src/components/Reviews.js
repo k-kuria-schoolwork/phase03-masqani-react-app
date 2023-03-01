@@ -3,7 +3,7 @@ import React from "react"
 function Pricing(){
     return(
         <div>
-            This is the PRICING page
+            This is the Reviews page
         
             </div>
        

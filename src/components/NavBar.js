@@ -15,13 +15,18 @@ function NavBar (){
                         <Link to='/about'>About</Link>
                     </li>
                     <li>
-                        <Link to='/services'>Services</Link>
+                        <Link to='/propertylistings'>PropertyListings</Link>
                     </li>
+                    <li>
+                        <Link to='/addproperty'>AddProperty</Link>
+                    </li>
+                   
+                    <li>
+                        <Link to='/reviews'>Reviews</Link>
+                    </li>
+
                     <li>
                         <Link to='/contacts'>Contacts</Link>
-                    </li>
-                    <li>
-                        <Link to='/pricing'>Pricing</Link>
                     </li>
                 </ul>
             </nav>
