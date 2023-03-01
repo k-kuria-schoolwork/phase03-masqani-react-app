@@ -1,5 +1,5 @@
  @import url('https://fonts.googleapis.com/css2?family=Gloock&display=swap');
-
+ @import url('https://fonts.googleapis.com/css2?family=Gloock&family=Shantell+Sans:wght@300&display=swap');
 *{
     box-sizing: border-box;
 }
@@ -17,6 +17,7 @@ body{
     align-items: center;
     gap: 2rem;
     padding: 5px 20px;
+    margin: 0 10px 8px 10px;
 
 }
 
@@ -24,7 +25,7 @@ ul{
     padding: 10px 30px;
     margin: 0;
     display: flex;
-    gap: 15px;
+    gap: 18px;
     list-style: none;
     font-size: 20px;
     font-weight: bold;
@@ -36,19 +37,4 @@ ul li{
 a{
     text-decoration: none;
     color: rgb(18, 126, 189);
-}
-
-h1{
-    text-align: center;
-    padding: 20px ;
-    
-}
-h2{
-    text-align: center;
-}
-p{
-    text-align: center;
-}
-ul li{
-    color: black;
 }
