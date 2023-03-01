@@ -1,0 +1,39 @@
+ @import url('https://fonts.googleapis.com/css2?family=Gloock&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background-color: rgba(146, 199, 235, 0.925);
+}
+
+.cont1{
+    color: rgb(0, 0, 0);
+    font-family: 'Gloock', serif;;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    padding: 5px 20px;
+
+}
+
+ul{
+    padding: 10px 30px;
+    margin: 0;
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+ul li{
+    color: rgb(233, 218, 17);
+}
+a{
+    text-decoration: none;
+    color: rgb(18, 126, 189);
+}
