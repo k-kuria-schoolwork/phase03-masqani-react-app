@@ -46,6 +46,8 @@ h1{
 
 .addheader1{
     padding-bottom: 20px;
+    font-size: 30px;
+    color: black;
     
 }
 
@@ -59,7 +61,7 @@ h1{
     margin-right: 50px;
     font-family: 'Gloock', serif;
     font-family: 'Shantell Sans', cursive;
-    color: rgba(60, 60, 209, 0.753);
+    color: rgba(7, 7, 214, 0.644);
     font-weight: bolder;
 }
 .jina{
