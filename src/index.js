@@ -10,6 +10,8 @@ import Contacts from './components/Contacts'
 import NavBar from './components/NavBar';
 import Reviews from './components/Reviews';
 import AddProperty from './components/AddProperty';
+import Cart from './components/Cart';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -22,6 +24,7 @@ root.render(
       <Route path='/addproperty' element={<AddProperty />}/>
       <Route path='/contacts' element={<Contacts />}/>
       <Route path='/reviews' element={<Reviews />}/>
+      <Route path='/cart' element={<Cart />}/>
 
     </Routes>
   </Router>

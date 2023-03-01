@@ -4,7 +4,7 @@ function AddProperty(){
     return(
         <div className="formcont1">
             <div  className="addheader1">
-             ADD PROPERTY FOR SALE
+             <h1 className="jina">ADD PROPERTY FOR SALE</h1>
              </div>
             <div className="formcont">
             <form class="row g-3">
