@@ -2,7 +2,11 @@ import React from "react"
 
 function Pricing(){
     return(
-        <div>This is the PRICING page</div>
+        <div>
+            This is the PRICING page
+        
+            </div>
+       
     )
 }
 
