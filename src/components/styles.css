@@ -32,32 +32,20 @@ ul{
 }
 
 ul li{
-    color: rgb(233, 218, 17);
+    color: rgb(7, 7, 6);
 }
 a{
     text-decoration: none;
     color: rgb(18, 126, 189);
 }
-
-.formcont{
-    background-color: rgba(0, 2, 0, 0.041);
-    padding-left: 30px;
-    padding-right: 30px;
-    margin-top: 20px;
-    margin-left: 40px;
-    margin-right: 90px;
-    border-radius: 25px;
-    color: brown;
-    font-family: 'Gloock', serif;
-    font-family: 'Shantell Sans', cursive;
-    font-weight: bolder;
-
+h1{
+    text-align: center;
+    margin-top: 10px;
     
 }
-.addheader1{
-    font-size: 25px;
-    font-family: 'Gloock', serif;
-    font-family: 'Shantell Sans', cursive;
-    font-weight: bolder;
-    padding-left: 30px;
+h2{
+    text-align: center;
+}
+p{
+    text-align: center;
 }
