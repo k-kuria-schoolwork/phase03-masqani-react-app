@@ -1,7 +1,7 @@
 
 import React, { useState, useEffect } from 'react';
 
-function PropertyListings() {
+function Home() {
   const [arts, setArts] = useState([]);
 
   useEffect(() => {
@@ -79,39 +79,35 @@ function PropertyListings() {
       console.error(error);
     });
   };
-  
   return (
-    <div className='row'>
-        
+    <div className="card-row "width="700" height="500" style={{ display: 'flex', flexWrap:"wrap" }}>
+      
       {arts.map(art => (
-        <div key={art.id}>
-          <h3>{art.alt_description}</h3>
-          <img width="700" height="500" src={art.urls.regular} alt="art" />
-          <h2>id: {art.id}</h2>
-          <p>created at: {art.created_at}</p>
-          <p>color: {art.color}</p>
-          <p>likes: {art.likes}</p>
-          <p>width: {art.width}</p>
-          <p>height: {art.height}</p>
-          <p>Price: $450</p>
-          <button className='bg-danger' onClick={() => deleteArt(art.id)}>DELETE</button>
-           <button onClick={() => editArt(art.id)}>Edit</button>
+        <div className='col-4'>
+        <div className="card " style={{ width: '35rem' }} key={art.id}>
+          <img width="700" height="500"className="card-img-top" src={art.urls.regular} alt="Art" />
+          <div className="card-body">
+            <h5 className="card-title">{art.alt_description}</h5>
+            <p className="card-text">{art.description}</p>
+            <h2>ID: {art.id}</h2>
+            <p>Created at: {art.created_at}</p>
+            <p>Color: {art.color}</p>
+            <p>Likes: {art.likes}</p>
+            <p>Width: {art.width}</p>
+            <p>Height: {art.height}</p>
+            <p>Price: $450</p>
+            <button >BUY</button>
+            <button className="bg-danger" onClick={() => deleteArt(art.id)}>DELETE</button>
+            <button onClick={() => editArt(art.id)}>Edit</button>
+          </div>
+        </div>
         </div>
       ))}
+      
     </div>
   );
-}
+      }
 
-export default PropertyListings;;
+export default Home;
 
 
-{/* <h3>${art.alt_description}</h3>
-       <img width="700" height="500" src="${art.urls.regular}" alt="art"><br>
-       id: ${art.id}<br>
-       created at: ${art.created_at}<br>
-       color: ${art.color}<br>
-       likes: ${art.likes}<br>
-       width: ${art.width}<br>
-       height: ${art.height}<br>
-       Price: $450</p1>
-export default Home */}
