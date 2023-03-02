@@ -4,7 +4,7 @@ import './components/styles.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router,Routes,Route } from 'react-router-dom';
-import PropertyListings from './components/PropertyListings'
+import Properties from './components/Properties'
 import Contacts from './components/Contacts'
 import NavBar from './components/NavBar';
 import Reviews from './components/Reviews';
@@ -18,7 +18,7 @@ root.render(
       <NavBar />
     <Routes>
       <Route path='/' element={<App />}/>
-      <Route path='/propertylistings' element={<PropertyListings />}/>
+      <Route path='/properties' element={<Properties />}/>
       <Route path='/addproperty' element={<AddProperty />}/>
       <Route path='/contacts' element={<Contacts />}/>
       <Route path='/reviews' element={<Reviews />}/>
