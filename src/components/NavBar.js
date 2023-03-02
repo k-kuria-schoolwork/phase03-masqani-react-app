@@ -4,7 +4,7 @@ function NavBar (){
     return(
         <div className="cont1">
             <div >
-            <h1 className="header1">Masqani Heights</h1>
+            <h1 className="header1">Masqani </h1>
             </div>
             <nav>
                 <ul>
