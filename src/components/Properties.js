@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 
-function Properties() {
+function PropertyList() {
   const [arts, setArts] = useState([]);
+
 
   useEffect(() => {
     fetch('https://api.unsplash.com/search/photos?query=drawings&client_id=vPrE9gEumlnowpP4lpOeqV4tLUiZZ021myr-Atr-RyA')
@@ -28,14 +29,7 @@ function Properties() {
     .catch(error => {
       console.error(error);
     });
-    
   
-
-//   const deleteSoldier = botId => {
-//     setSoldiers(soldiers.filter(s => s.id !== botId));
-//     fetch(`http://localhost:8001/bots/${botId}`, {
-//         method: 'DELETE',
-//     },[]);
 
   }
 
@@ -78,26 +72,26 @@ function Properties() {
       console.error(error);
     });
   };
+
+  
+
   return (
-    <div className="card-row "width="700" height="500" style={{ display: 'flex', flexWrap:"wrap"}}>
+    <div className="card-row "width="700" height="500" style={{ display: 'flex', borderRadius:'40px', flexWrap:"wrap"}}>
       
       {arts.map(art => (
-        <div className='col-4' style={{marginTop: '30px'}}>
+        <div className='col-4' style={{marginTop: '30px', borderRadius:'40px'}}>
         <div className="card " style={{ width: '35rem'}} key={art.id}>
           <img width="700" height="500"className="card-img-top" src={art.urls.regular} alt="Art" />
           <div className="card-body">
             <h5 className="card-title">{art.alt_description}</h5>
-            {/* <p className="card-text">{art.description}</p> */}
-            <h2>ID: {art.id}</h2>
             <p>Created at: {art.created_at}</p>
             <p>Color: {art.color}</p>
             <p>Likes: {art.likes}</p>
             <p>Width: {art.width}</p>
             <p>Height: {art.height}</p>
-            <p>Price: $450</p>
-            <button style={{marginRight: '5px'}}>BUY</button>
-            <button className="bg-danger" style={{marginRight: '5px'}} onClick={() => deleteArt(art.id)}>DELETE</button>
-            <button style={{marginRight: '30px'}}onClick={() => editArt(art.id)}>Edit</button>
+            {/* <Link to="/art/:id" component={ParticularProperty} style = {{color: 'white'}}>View Details</Link> */}
+            <button className="bg-danger" type="button" class="btn btn-danger"style={{marginRight: '5px'}} onClick={() => deleteArt(art.id)}>DELETE</button>
+            <button type="button" class="btn btn-secondary"style={{marginRight: '30px'}}onClick={() => editArt(art.id)}>Edit</button> 
           </div>
         </div>
         </div>
@@ -107,4 +101,4 @@ function Properties() {
   );
       }
 
-export default Properties;
+export default PropertyList;
