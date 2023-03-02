@@ -16,7 +16,7 @@ function NavBar (){
                     </li>
                    
                     <li>
-                        <Link to='/propertylistings'>Properties</Link>
+                        <Link to='/properties'>Properties</Link>
                     </li>
                     <li>
                         <Link to='/addproperty'>AddProperty</Link>
