@@ -23,7 +23,7 @@ const Cart = () => {
             <h1>Cart</h1>
             <button>Checkout</button>
             {cartItems.length === 0 ? (
-                <p>Your cart id empty!</p>
+                <p>Your cart is empty!</p>
             ):(
                 <div>
                     <ul>
