@@ -13,7 +13,7 @@ function NavBar (){
                     </li>
                    
                     <li>
-                        <Link to='/propertylistings'>PropertyListings</Link>
+                        <Link to='/propertylistings'>Properties</Link>
                     </li>
                     <li>
                         <Link to='/addproperty'>AddProperty</Link>
@@ -23,9 +23,6 @@ function NavBar (){
                         <Link to='/reviews'>Reviews</Link>
                     </li>
 
-                    <li>
-                        <Link to='/contacts'>Contacts</Link>
-                    </li>
                     <li>
                         <Link to='/cart'>Cart</Link>
                     </li>

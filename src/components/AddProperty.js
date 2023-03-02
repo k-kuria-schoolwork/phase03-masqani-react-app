@@ -1,33 +1,50 @@
-import React from "react"
+import React, { useState } from "react"
 
 function AddProperty(){
+
+  const [addProp, setAddProp] = useState({
+    name:"",
+    number:"",
+    city:"",
+    address:"",
+    price:"",
+  },[])
+  function handle(e){
+    const newdata={...addProp}
+    newprop[e.target.id] = e.target.value
+    setAddProp(newprop)
+    console.log(newprop)
+
+  }
     return(
+      
         <div className="formcont1">
             <div  className="addheader1">
              <h1 className="jina">ADD PROPERTY FOR SALE</h1>
              </div>
             <div className="formcont">
+          
             <form class="row g-3">
             <div class="col-md-5">
     <label for="inputAddress" class="form-label">Agent Name</label>
-    <input type="text" class="form-control" id="inputAddress" placeholder="Kamau Njiruu"/>
+    <input onChange={(e)=>handle(e)} id="name"value={data.name} type="text" class="form-control"  placeholder="Kamau Njiruu"/>
   </div>
 
   <div class="col-md-4">
     <label for="inputAddress2" class="form-label">Agent Number</label>
-    <input type="number" class="form-control" id="inputAddress2" placeholder="0734*******"/>
+    <input onChange={(e)=>handle(e)} id="number"value={data.number} type="number" class="form-control"placeholder="0734*******"/>
   </div>
   <div class="col-md-5">
     <label for="inputAddress2" class="form-label">City</label>
-    <input type="text" class="form-control" id="inputAddress2" placeholder="Banana town"/>
+    <input onChange={(e)=>handle(e)} id="city"value={data.city} type="text" class="form-control"  placeholder="Banana town"/>
   </div>
   <div class="col-md-4">
     <label for="inputAddress2" class="form-label">Home Address</label>
-    <input type="text" class="form-control" id="inputAddress2" placeholder="kinoo, z-corner"/>
+    <input onChange={(e)=>handle(e)} id="address"value={data.address} type="text" class="form-control"  placeholder="kinoo, z-corner"/>
   </div>
   <div class="col-md-5">
     <label for="inputAddress" class="form-label">Price</label>
-    <input type="number" class="form-control" id="inputAddress" placeholder="$ 1000"/>
+    <input onChange={(e)=>handle(e)} id="price"value={data.price} type="number" class="form-control"  placeholder="$ 1000"/>
   </div>
   <div class="col-md-4">
     <label for="inputState" class="form-label">Property type</label>
