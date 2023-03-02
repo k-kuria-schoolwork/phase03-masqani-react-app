@@ -19,9 +19,10 @@ const Cart = () => {
         setCartItems([]);
     };
     return(
-        <div>
-            <h1>Cart</h1>
-            <button>Checkout</button>
+        <div className="cart-container">
+            <div className="cart-checkout">
+            <h1>CART</h1>
+            <button type="button" onClick="alert('Thank you for Trusting Masqani!')">Checkout</button>
             {cartItems.length === 0 ? (
                 <p>Your cart is empty!</p>
             ):(
@@ -39,7 +40,8 @@ const Cart = () => {
                     </div>
             )
         }
-            
+        
+        </div>    
             
         </div>
     )
