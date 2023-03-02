@@ -21,7 +21,9 @@ function NavBar (){
                     <li>
                         <Link to='/addproperty'>AddProperty</Link>
                     </li>
-
+                    <li>
+                        <Link to='/search'>Search</Link>
+                    </li>
                     <li>
                         <Link to='/cart'>Cart</Link>
                     </li>
