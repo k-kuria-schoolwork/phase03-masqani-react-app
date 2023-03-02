@@ -1,7 +1,6 @@
-
 import React, { useState, useEffect } from 'react';
 
-function Home() {
+function PropertyList() {
   const [arts, setArts] = useState([]);
 
   useEffect(() => {
@@ -96,9 +95,9 @@ function Home() {
             <p>Width: {art.width}</p>
             <p>Height: {art.height}</p>
             <p>Price: $450</p>
-            <button >BUY</button>
-            <button className="bg-danger" onClick={() => deleteArt(art.id)}>DELETE</button>
-            <button onClick={() => editArt(art.id)}>Edit</button>
+            <button style={{marginRight: '5px'}}>BUY</button>
+            <button className="bg-danger" style={{marginRight: '5px'}} onClick={() => deleteArt(art.id)}>DELETE</button>
+            <button style={{marginRight: '30px'}}onClick={() => editArt(art.id)}>Edit</button>
           </div>
         </div>
         </div>
@@ -108,6 +107,4 @@ function Home() {
   );
       }
 
-export default Home;
-
-
+export default PropertyList;
