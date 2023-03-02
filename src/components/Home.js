@@ -98,6 +98,23 @@ function Home(){
                 </div>
             </div>
         </div>
+        <footer>
+            <div className="footer">
+                <h2>THIS IS THE FOOTER</h2>
+                <div className="footercont">
+                    <ul>ABOUT US
+                        <li>Our mission is to provide the best possible real estate services to our clients, with integrity, professionalism, and attention to detail.</li>
+                    </ul> 
+                    {/* <ul>CONTACT INFO
+                        <li>Our mission is to provide the best possible real estate services to our clients, with integrity, professionalism, and attention to detail.</li>
+                    </ul>  
+                    <ul>NEWSLETTER
+                        <li>Our mission is to provide the best possible real estate services to our clients, with integrity, professionalism, and attention to detail.</li>
+                    </ul> 
+                     */}
+                </div>
+            </div>
+        </footer>
       
 </div>
     )
