@@ -60,7 +60,7 @@ function Home(){
             <p>-------WORK FLOW------</p>
             <h2>How it works</h2>
           </div>
-                <div class="row row-cols-1 row-cols-md-3  g-4">
+                <div class="row row-cols-1 row-cols-md-4  g-4">
                 <div class="col">
                     <div class="card h-100 ">
                     <div class="card-body">
@@ -102,16 +102,16 @@ function Home(){
             <div className="footer">
                 <h2>THIS IS THE FOOTER</h2>
                 <div className="footercont">
-                    <ul>ABOUT US
-                        <li>Our mission is to provide the best possible real estate services to our clients, with integrity, professionalism, and attention to detail.</li>
-                    </ul> 
-                    {/* <ul>CONTACT INFO
-                        <li>Our mission is to provide the best possible real estate services to our clients, with integrity, professionalism, and attention to detail.</li>
-                    </ul>  
-                    <ul>NEWSLETTER
-                        <li>Our mission is to provide the best possible real estate services to our clients, with integrity, professionalism, and attention to detail.</li>
-                    </ul> 
-                     */}
+                    <h5>ABOUT US
+                        <p>Our mission is to provide the best possible real estate services to our clients, with integrity, professionalism, .</p>
+                    </h5> 
+                    <h5>CONTACT INFO
+                    <p> Our mission is to provide the best possible real estate services to our clients, with integrity, professionalism, and attention to detail.</p>
+                    </h5>
+                    <h5>NEWSLETTER
+                        <p>Our mission is to provide the best possible real estate services to our clients, with integrity, professionalism, and attention to detail.</p>
+                    </h5> 
+                    
                 </div>
             </div>
         </footer>

@@ -8,7 +8,7 @@
 
  body {
      margin: 0;
-     background-color: rgba(210, 232, 247, 0.925);
+     background-color: rgba(248, 248, 248, 0.925);
  }
 
  .cont1 {
@@ -16,39 +16,45 @@
      font-family: 'Gloock', serif;
      align-items: center;
      justify-content: center;
-     margin: 10px;
+     margin: 20px;
      padding: 0;
      margin-right: 30%;
+     margin-top: 20px;
 
  }
 
  ul {
-     padding: 20px 100px;
+     padding: 10px 100px;
      margin: 0;
      display: flex;
      gap: 35px;
      list-style: none;
      font-size: 25px;
-     font-weight: bold;
+     
  }
 
  ul li {
      color: rgb(7, 7, 6);
+     margin-top: -10px;
+     margin-right: 0px;
+     
+
  }
 
  a {
      text-decoration: none;
-     color: rgb(18, 126, 189);
+     margin-top: -10px;
+     color: rgb(14, 10, 231);
      cursor: pointer;
-     transition: 0.8s;
+     transition: 0.5s;
  }
  a:hover{
-    color: black;
+    color: rgb(255, 0, 0);
  }
 
  h1 {
      text-align: center;
-     margin-top: 10px;
+     margin-top:10px;
      margin-left: 20%;
 
 
@@ -61,6 +67,8 @@
 
 .header1{
     color: black;
+    font-weight:lighter;
+    margin-left: 10px;
     float: left;
     cursor: pointer;
      transition: 0.5s;
@@ -86,6 +94,7 @@
      font-weight: bolder;
  }
 
+
  .jina {
      color: brown;
      font-size:25px;
@@ -93,10 +102,13 @@
      font-family: 'Gloock', serif;
      padding-top: 20px;
      padding-bottom: 20px;
-
-
-
  }
+
+ .formcont1 button{
+    margin-bottom: 20px;
+    border-radius: 5px;
+ }
+ 
 
  .img1 {
      margin: 0;
@@ -178,18 +190,39 @@
      width: 65%;
  }
 
+ .footer{
+    background-color: rgba(5, 86, 236, 0.603);
+    margin-top: 50px;
+    padding-top: 70px;
+ }
+ .footercont{
+    width: 50%;
+    display:flex;
+    padding-left: 110px;
+    padding-top: 20px;
+    gap: 10rem;
+ }
+ .footercont h5{
+    color: rgb(238, 232, 232);
+    margin-top: 10px;
+ }
+ .footercont p{
+    color: black;
+    margin: 10px 0 10px 40px;
+ }
+
  .cont3 {
-    color: yellow;
+    color: rgb(0, 225, 255);
     background-color: black;
     float: right;
     
 }
 .card{
     border: none;
-    margin: 5px 10px 0px 40px;
+    margin: 5px 10px 0px 60px;
 }
 .card-body{
-    background-color: rgba(24, 109, 219, 0.658);
+    background-color: rgba(250, 250, 250, 0.116);
 }
 .card-title{
     color: rgb(255, 252, 252);
@@ -197,7 +230,7 @@
 
 .cart-container{
     background-color: rgba(0, 0, 0, 0.623);
-    color: white;
+    color: rgb(180, 161, 161);
 }
 .cart-checkout button{
     background-color: #007bff;
@@ -226,7 +259,7 @@
 .container h1{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-form {
+.flex {
     background-color: rgba(0, 0, 0, 0.623);
     border-radius: 5px;
     margin-top: 50px;

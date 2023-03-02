@@ -49,19 +49,16 @@ function AddProperty(){
     <label for="inputAddress2" class="form-label">Agent Number</label>
     <input onChange={(e)=>handle(e)} id="number"value={addProp.number} type="number" class="form-control"placeholder="0734*******"/>
   </div>
+
   <div class="col-md-5">
-    <label for="inputAddress2" class="form-label">City</label>
-    <input onChange={(e)=>handle(e)} id="city"value={addProp.city} type="text" class="form-control"  placeholder="Banana town"/>
-  </div>
-  <div class="col-md-4">
     <label for="inputAddress2" class="form-label">Home Address</label>
     <input onChange={(e)=>handle(e)} id="address"value={addProp.address} type="text" class="form-control"  placeholder="kinoo, z-corner"/>
   </div>
-  <div class="col-md-5">
+  <div class="col-md-4">
     <label for="inputAddress" class="form-label">Price</label>
     <input onChange={(e)=>handle(e)} id="price"value={addProp.price} type="number" class="form-control"  placeholder="$ 1000"/>
   </div>
-  <div class="col-md-4">
+  <div class="col-md-5">
     <label for="inputState" class="form-label">Property type</label>
     <select id="inputState" class="form-select">
       <option selected>Choose...</option>
@@ -72,7 +69,7 @@ function AddProperty(){
       <option>Cottage</option>
     </select>
   </div>
-  <div class="col-md-5">
+  <div class="col-md-4">
     <label for="inputState" class="form-label">Insuarance type</label>
     <select id="inputState" class="form-select">
       <option selected>Choose...</option>
