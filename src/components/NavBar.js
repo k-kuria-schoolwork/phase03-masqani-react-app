@@ -1,10 +1,13 @@
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
+import logo from './images/logo.png';
+
 
 function NavBar (){
     return(
         <div className="cont1">
+            <img src={logo} alt="My logo" style={{ width: '150px', height: 'auto' ,}} />
             <div >
-            <h1 className="header1">Masqani </h1>
+            
             </div>
             <nav>
                 <ul>
@@ -17,10 +20,6 @@ function NavBar (){
                     </li>
                     <li>
                         <Link to='/addproperty'>AddProperty</Link>
-                    </li>
-                   
-                    <li>
-                        <Link to='/reviews'>Reviews</Link>
                     </li>
 
                     <li>
