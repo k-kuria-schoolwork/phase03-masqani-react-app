@@ -196,3 +196,68 @@
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+.container{
+    padding-top: 10px;
+}
+.container h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+form {
+    background-color: rgba(0, 0, 0, 0.623);
+    border-radius: 5px;
+    margin-top: 50px;
+    padding: 0 20px;
+}
+form input {
+    padding: 10px;
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.623);
+    margin-top: 5px;
+    border-radius: 5px;
+  }
+  form span {
+    font-size: 18px;
+    color: white;
+  }
+  input::placeholder {
+    font-size: 17px;
+    color: grey;
+  }
+  form .box {
+    padding: 15px;
+    border-left: 1px solid rgba(128, 128, 128, 0.2);
+  }
+  form .box:nth-child(1) {
+    border-left: none;
+  }
+  form h4 {
+    font-weight: 500;
+  }
+  @media screen and (max-width: 800px) {
+    .hero .container {
+      padding-top: 30%;
+    }}
+
+    form {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      form .box {
+        border-left: none;
+      }
+      form input {
+        width: 100%;
+      }  
+.btn1{
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    position: fixed;
+    right: 430px;
+    top: 380px;
+}
