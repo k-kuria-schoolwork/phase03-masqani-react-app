@@ -171,8 +171,11 @@
     color: rgb(255, 252, 252);
 }
 
-
-/* button{
+.cart-container{
+    background-color: rgba(0, 0, 0, 0.623);
+    color: white;
+}
+.cart-checkout button{
     background-color: #007bff;
     color: #fff;
     border: none;
@@ -184,4 +187,12 @@
     position: fixed;
     bottom: 20px;
     right: 30px;
-} */
+}
+.cart-checkout h1{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.cart-checkout p{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
