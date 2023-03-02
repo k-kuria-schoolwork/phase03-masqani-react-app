@@ -14,17 +14,16 @@
  .cont1 {
      color: rgb(0, 0, 0);
      font-family: 'Gloock', serif;
-     display: flex;
-     justify-content: center;
      align-items: center;
-     gap: 2rem;
-     padding: 5px;
-     margin: 0 20px;
+     justify-content: center;
+     margin: 10px;
+     padding: 0;
+     margin-right: 30%;
 
  }
 
  ul {
-     padding: 10px 30px;
+     padding: 20px 100px;
      margin: 0;
      display: flex;
      gap: 18px;
@@ -45,20 +44,28 @@
  h1 {
      text-align: center;
      margin-top: 10px;
+     margin-left: 20%;
+
 
  }
 
- .addheader1 {
-     padding-bottom: 20px;
+ /* .addheader1 {
+     padding-bottom: 50px;
      font-size: 30px;
-     color: black;
+     color: black; */
 
- }
+.header1{
+    color: black;
+    float: left;
+
+}
+
+ 
 
  .formcont1 {
      background-color: rgba(0, 0, 10, 0.096);
      border-radius: 20px;
-     padding-left: 30px;
+     padding-left: 50px;
      padding-right: 5px;
      margin-top: 20px;
      margin-left: 30px;
@@ -71,7 +78,12 @@
 
  .jina {
      color: brown;
-     font-size: 25px;
+     font-size:25px;
+     margin-right: 30%;
+     font-family: 'Gloock', serif;
+     padding-top: 20px;
+     padding-bottom: 20px;
+
 
 
  }
@@ -170,18 +182,3 @@
 .card-title{
     color: rgb(255, 252, 252);
 }
-
-
-/* button{
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    margin-top: 20px;
-    position: fixed;
-    bottom: 20px;
-    right: 30px;
-} */

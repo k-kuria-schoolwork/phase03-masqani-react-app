@@ -9,6 +9,21 @@ function AddProperty(){
     address:"",
     price:"",
   },[])
+
+
+  //post method to send new data to server
+  function submit(e){
+    e.preventDefault();
+    fetch( {
+      name:addProp.name,
+      number:addProp.number,
+      city:addProp.city,
+      address:addProp.address,
+      price:addProp.price,
+    })
+  }
+
+
   function handle(e){
     const newprop={...addProp}
     newprop[e.target.id] = e.target.value
@@ -24,7 +39,7 @@ function AddProperty(){
              </div>
             <div className="formcont">
           
-            <form class="row g-3">
+            <form onSubmit={(e)=>submit(e)} class="row g-3">
             <div class="col-md-5">
     <label for="inputAddress" class="form-label">Agent Name</label>
     <input onChange={(e)=>handle(e)} id="name"value={addProp.name} type="text" class="form-control"  placeholder="Kamau Njiruu"/>

@@ -6,7 +6,6 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router,Routes,Route } from 'react-router-dom';
 import Properties from './components/Properties'
 import NavBar from './components/NavBar';
-import Reviews from './components/Reviews';
 import AddProperty from './components/AddProperty';
 import Cart from './components/Cart';
 
@@ -19,7 +18,6 @@ root.render(
       <Route path='/' element={<App />}/>
       <Route path='/properties' element={<Properties />}/>
       <Route path='/addproperty' element={<AddProperty />}/>
-      <Route path='/reviews' element={<Reviews />}/>
       <Route path='/cart' element={<Cart />}/>
 
     </Routes>

@@ -4,7 +4,9 @@ function NavBar (){
     return(
         <div className="cont1">
             <div >
-            <h1 className="header1">Masqani </h1>
+            <h1 className="header1">Masqani Heights
+            <img ></img>
+            </h1>
             </div>
             <nav>
                 <ul>
@@ -19,10 +21,6 @@ function NavBar (){
                         <Link to='/addproperty'>AddProperty</Link>
                     </li>
                    
-                    <li>
-                        <Link to='/reviews'>Reviews</Link>
-                    </li>
-
                     <li>
                         <Link to='/cart'>Cart</Link>
                     </li>

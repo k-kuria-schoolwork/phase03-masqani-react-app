@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-function PropertyList() {
+function Properties() {
   const [arts, setArts] = useState([]);
 
   useEffect(() => {
@@ -107,4 +107,4 @@ function PropertyList() {
   );
       }
 
-export default PropertyList;
+export default Properties;
