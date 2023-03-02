@@ -8,6 +8,7 @@ import Properties from './components/Properties'
 import NavBar from './components/NavBar';
 import AddProperty from './components/AddProperty';
 import Cart from './components/Cart';
+import Search from './components/Search'
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -19,6 +20,7 @@ root.render(
       <Route path='/properties' element={<Properties />}/>
       <Route path='/addproperty' element={<AddProperty />}/>
       <Route path='/cart' element={<Cart />}/>
+      <Route path='/search' element={<Search />}/>
 
     </Routes>
   </Router>
