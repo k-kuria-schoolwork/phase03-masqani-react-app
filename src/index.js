@@ -18,7 +18,6 @@ root.render(
       <Route path='/' element={<App />}/>
       <Route path='/properties' element={<Properties />}/>
       <Route path='/addproperty' element={<AddProperty />}/>
-      <Route path='/cart' element={<Cart />}/>
       <Route path='/search' element={<Search />}/>
 
     </Routes>
