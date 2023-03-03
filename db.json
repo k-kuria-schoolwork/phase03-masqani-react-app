@@ -1,0 +1,92 @@
+[
+    {
+        "id": 1,
+        "image_url": "https://unsplash.com/photos/aapSemzfsOk",
+        "name": "Muthangari Lofts",
+        "price": 48550000,
+        "address": "789 Muthangari Drive",
+        "description": "Lorem ipusr dolorrr...",
+        "created_at": "2023-03-02T14:58:50.589Z",
+        "updated_at": "2023-03-02T15:48:04.280Z"
+    },
+    {
+        "id": 2,
+        "image_url": "https://unsplash.com/photos/2d4lAQAlbDA",
+        "name": "Garden City Apartments",
+        "price": 325000000,
+        "address": "456 Kasarani, Nairobi",
+        "description": "Lorem ipusr dolor...",
+        "created_at": "2023-03-02T14:58:50.593Z",
+        "updated_at": "2023-03-02T14:58:50.593Z"
+    },
+    {
+        "id": 3,
+        "image_url": "https://unsplash.com/photos/yFV39g6AZ5o",
+        "name": "Karen Blixen Cottages",
+        "price": 76500000,
+        "address": "789 Karen, Nairobi",
+        "description": "Lorem ipusr dolor...",
+        "created_at": "2023-03-02T14:58:50.595Z",
+        "updated_at": "2023-03-02T14:58:50.595Z"
+    },
+    {
+        "id": 4,
+        "image_url": "https://unsplash.com/photos/M7GddPqJowg",
+        "name": "Kilimani Executive Apartments",
+        "price": 57800000,
+        "address": "123 Kilimani, Nairobi",
+        "description": "Lorem ipusr dolor...",
+        "created_at": "2023-03-02T14:58:50.597Z",
+        "updated_at": "2023-03-02T14:58:50.597Z"
+    },
+    {
+        "id": 5,
+        "image_url": "https://unsplash.com/photos/KtOid0FLjqU",
+        "name": "Muthaiga Heights",
+        "price": 43500000,
+        "address": "456 Muthaiga, Nairobi",
+        "description": "Lorem ipusr dolor...",
+        "created_at": "2023-03-02T14:58:50.600Z",
+        "updated_at": "2023-03-02T14:58:50.600Z"
+    },
+    {
+        "id": 7,
+        "image_url": "https://unsplash.com/photos/UxCS2kVhZTc",
+        "name": "Parklands Heights",
+        "price": 51250000,
+        "address": "123, Parklands, Nairobi",
+        "description": "Lorem ipusr dolor...",
+        "created_at": "2023-03-02T14:58:50.605Z",
+        "updated_at": "2023-03-02T14:58:50.605Z"
+    },
+    {
+        "id": 8,
+        "image_url": "https://unsplash.com/photos/7WsmtrrDZUc",
+        "name": "Kitisuru Terraces",
+        "price": 63550000,
+        "address": "456 Kitisuru, Nairobi",
+        "description": "Lorem ipusr dolor...",
+        "created_at": "2023-03-02T14:58:50.607Z",
+        "updated_at": "2023-03-02T14:58:50.607Z"
+    },
+    {
+        "id": 9,
+        "image_url": "https://unsplash.com/photos/iSmv0eEcHHM",
+        "name": "Langata Heights Villas",
+        "price": 38200000,
+        "address": "789 Langata Nairobi",
+        "description": "Lorem ipusr dolor...",
+        "created_at": "2023-03-02T14:58:50.609Z",
+        "updated_at": "2023-03-02T14:58:50.609Z"
+    },
+    {
+        "id": 10,
+        "image_url": "https://unsplash.com/photos/RKdLlTyjm5g",
+        "name": "Riverside Green Villas",
+        "price": 57650000,
+        "address": "123 Riverside, Nairobi",
+        "description": "Lorem ipusr dolor...",
+        "created_at": "2023-03-02T16:10:58.281Z",
+        "updated_at": "2023-03-02T16:10:58.281Z"
+    }
+]
