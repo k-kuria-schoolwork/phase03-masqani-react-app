@@ -1,6 +1,7 @@
  @import url('https://fonts.googleapis.com/css2?family=Gloock&display=swap');
  @import url('https://fonts.googleapis.com/css2?family=Gloock&family=Shantell+Sans:wght@300&display=swap');
  @import url('https://fonts.googleapis.com/css2?family=Oranienbaum&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Oranienbaum&family=Zilla+Slab&display=swap');
 
  * {
      box-sizing: border-box;
@@ -163,7 +164,7 @@
  .aboutheader {
      justify-content: center;
      align-items: center;
-     padding: 0 10px;
+     padding: 0 60px;
      margin-top: 120px;
      margin-bottom: 100px;
 
@@ -173,8 +174,15 @@
      color: rgba(2, 95, 201, 0.979);
      margin-bottom: 35px;
      font-family: 'Gloock', serif;
-     font-size: 30px;
+     font-size: 50px;
+     margin-left: 30px;
 
+ }
+
+ .pbout{
+    width: 60%;
+    margin-left: 20%;
+    font-size: 18px;
  }
 .offer{
     font-size: small;
@@ -194,13 +202,16 @@
     background-color: rgba(5, 86, 236, 0.603);
     margin-top: 50px;
     padding-top: 70px;
+    padding-bottom: 90px;
  }
  .footercont{
-    width: 50%;
+    width:80%;
     display:flex;
-    padding-left: 110px;
+    padding-left: 20%;
     padding-top: 20px;
-    gap: 10rem;
+    gap: 3rem;
+    font-family: 'Oranienbaum', serif;
+    font-family: 'Zilla Slab', serif;
  }
  .footercont h5{
     color: rgb(238, 232, 232);
@@ -208,7 +219,13 @@
  }
  .footercont p{
     color: black;
-    margin: 10px 0 10px 40px;
+    margin: 10px 10px 10px 40px;
+ }
+ .footer-title{
+    color: black;
+ }
+ span{
+    color: rgb(251, 255, 0);
  }
 
  .cont3 {
@@ -222,10 +239,15 @@
     margin: 5px 10px 0px 60px;
 }
 .card-body{
-    background-color: rgba(250, 250, 250, 0.116);
+    background-color: rgba(0, 0, 0, 0.116);
+    font-family: 'Oranienbaum', serif;
+    font-family: 'Zilla Slab', serif;
+    
 }
 .card-title{
-    color: rgb(255, 252, 252);
+    color: rgb(10, 10, 10);
+    font-weight: bold;
+    
 }
 
 .cart-container{
@@ -317,4 +339,33 @@ form input {
     position: fixed;
     right: 430px;
     top: 380px;
+}
+
+
+.awards{
+    color: wheat;
+    font-size: 20px;
+    font-family: 'Oranienbaum', serif;
+    font-family: 'Zilla Slab', serif;
+}
+.awards p{
+    color: black;
+    font-size: 30px;
+}
+
+.copyright{
+    margin-top: 40px;
+    font-family: 'Oranienbaum', serif;
+    font-family: 'Zilla Slab', serif;
+}
+.services{
+    font-family: 'Oranienbaum', serif;
+    font-family: 'Zilla Slab', serif;
+}
+.layout p{
+    cursor: pointer;
+    transition: 0.5s; 
+}
+.layout p:hover{
+    color: yellow;
 }

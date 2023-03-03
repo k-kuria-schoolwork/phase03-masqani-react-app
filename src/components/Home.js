@@ -25,7 +25,7 @@ function Home(){
             <h1 className="abouth1">We bring your dream home to reality</h1>
               <p className="pbout">Our mission is to provide the best possible real estate services to our clients, with integrity, professionalism, and attention to detail.</p>
               <p className="pbout">At our company, we pride ourselves on providing exceptional service to our clients in finding their dream homes. Whether you're buying, selling, or renting, we're here to help.</p>
-              <p>Take a look at our featured properties below, or use our search bar to find properties that fit your specific needs.</p>
+              <p className="pbout">Take a look at our featured properties below, or use our search bar to find properties that fit your specific needs.</p>
             </div>
 
             <div className="About ">
@@ -56,17 +56,16 @@ function Home(){
 
             </div>
             </div>
-          <div>
+          <div  className="services">
             <p>-------WORK FLOW------</p>
-            <h2>How it works</h2>
+            <h2>SERVICES</h2>
           </div>
                 <div class="row row-cols-1 row-cols-md-4  g-4">
                 <div class="col">
                     <div class="card h-100 ">
                     <div class="card-body">
                         <h5 class="card-title">Evaluate Property</h5>
-                        <p class="card-text">Onion With Cheese</p>
-                        <p className="price">$18.00</p>
+                        <p class="card-text">Find properties listed in our website and choose the one that grasps your attention</p>
                     </div>
                     </div>
                 </div>
@@ -74,8 +73,7 @@ function Home(){
                     <div class="card h-100">
                     <div class="card-body">
                         <h5 class="card-title">Meet Your Agent</h5>
-                        <p class="card-text">Onion With Cheese</p>
-                        <p className="price">$18.00</p>
+                        <p class="card-text">Communicate with the agents involved through their contacts listed in the property</p>
                     </div>
                     </div>
                 </div>
@@ -83,16 +81,15 @@ function Home(){
                     <div class="card h-100">
                     <div class="card-body">
                         <h5 class="card-title">Close The Deal</h5>
-                        <p class="card-text">Onion With Cheese</p>
-                        <p className="price">$18.00</p>
+                        <p class="card-text">Meet with agent and pass through the legal process to attain desired property</p>
                     </div>
                     </div>
-                </div> <div class="col">
+                </div> 
+                <div class="col">
                     <div class="card h-100">
                     <div class="card-body">
                         <h5 class="card-title">Have Your Property</h5>
-                        <p class="card-text">Onion With Cheese</p>
-                        <p className="price">$18.00</p>
+                        <p class="card-text">Ownership is transfered and the you the customer takes control of the property</p>
                     </div>
                     </div>
                 </div>
@@ -100,19 +97,30 @@ function Home(){
         </div>
         <footer>
             <div className="footer">
-                <h2>THIS IS THE FOOTER</h2>
+            <h5 className="awards">Our Awards
+             <p>Over 1,240,000+ Happy Users Being With Us Still They Love Our Services </p>
+            </h5> 
                 <div className="footercont">
-                    <h5>ABOUT US
-                        <p>Our mission is to provide the best possible real estate services to our clients, with integrity, professionalism, .</p>
+                    <h5 className="layout">LAYOUT PAGES
+                        <p>Home Page</p>
+                        <p>Property Page</p>
+                        <p>AddProperty Page</p>
                     </h5> 
                     <h5>CONTACT INFO
-                    <p> Our mission is to provide the best possible real estate services to our clients, with integrity, professionalism, and attention to detail.</p>
+                    <p> Get in touch through our social media platforms</p>
+                    <p><span>Instagram@</span>maQani_heights </p>
+                    <p><span>Twitter@ </span> maQani_heights </p>
                     </h5>
-                    <h5>NEWSLETTER
-                        <p>Our mission is to provide the best possible real estate services to our clients, with integrity, professionalism, and attention to detail.</p>
-                    </h5> 
-                    
+                    <h5>chat with us  throgh email and phone number
+                    <p><span>Phone </span>+2766-456-773 </p>
+                    <p><span>Phone </span>+2766-456-773 </p>
+                    </h5>
+
+                
                 </div>
+                <div className="copyright">
+                      <h5>Copyright @2023 All Rights  Reserved | MAQANI REAL ESTATE.</h5>
+                 </div>
             </div>
         </footer>
       
