@@ -5,9 +5,10 @@ function PropertyList() {
 
 
   useEffect(() => {
-    fetch('https://api.unsplash.com/search/photos?query=drawings&client_id=vPrE9gEumlnowpP4lpOeqV4tLUiZZ021myr-Atr-RyA')
+    fetch('http://localhost:3000/data')
       .then(response => response.json())
-      .then(artData => setArts(artData.results));
+      .then(houses => setArts(houses));
+      
   }, []);
 
   const deleteArt = artId => {
@@ -15,7 +16,7 @@ function PropertyList() {
     setArts(arts.filter(s => s.id !== artId));
   
     // Send a DELETE request to the Unsplash API
-    fetch(`https://api.unsplash.com/photos/${artId}`, {
+    fetch(`http://localhost:3000/data${artId}`, {
       method: 'DELETE',
       headers: {
         'Authorization': 'Client-ID vPrE9gEumlnowpP4lpOeqV4tLUiZZ021myr-Atr-RyA'
@@ -78,17 +79,15 @@ function PropertyList() {
   return (
     <div className="card-row "width="700" height="500" style={{ display: 'flex', borderRadius:'40px', flexWrap:"wrap"}}>
       
-      {arts.map(art => (
+      {arts.map((art,index) => (
         <div className='col-4' style={{marginTop: '30px', borderRadius:'40px'}}>
-        <div className="card " style={{ width: '35rem'}} key={art.id}>
-          <img width="700" height="500"className="card-img-top" src={art.urls.regular} alt="Art" />
+        <div className="card " style={{ width: '35rem'}} key={index}>
+          <img width="700" height="500"className="card-img-top" src={art.image_url} alt="House" />
           <div className="card-body">
-            <h5 className="card-title">{art.alt_description}</h5>
-            <p>Created at: {art.created_at}</p>
-            <p>Color: {art.color}</p>
-            <p>Likes: {art.likes}</p>
-            <p>Width: {art.width}</p>
-            <p>Height: {art.height}</p>
+            <h5 className="card-title">{art.name}</h5>
+            <p>Price: {art.price}</p>
+            <p>Address: {art.address}</p>
+            <p>{art.description}</p>
             {/* <Link to="/art/:id" component={ParticularProperty} style = {{color: 'white'}}>View Details</Link> */}
             <button className="bg-danger" type="button" class="btn btn-danger"style={{marginRight: '5px'}} onClick={() => deleteArt(art.id)}>DELETE</button>
             <button type="button" class="btn btn-secondary"style={{marginRight: '30px'}}onClick={() => editArt(art.id)}>Edit</button> 
@@ -98,6 +97,7 @@ function PropertyList() {
       ))}
       
     </div>
+    
   );
       }
 
