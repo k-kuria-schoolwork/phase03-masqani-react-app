@@ -7,7 +7,6 @@ import { BrowserRouter as Router,Routes,Route } from 'react-router-dom';
 import Properties from './components/Properties'
 import NavBar from './components/NavBar';
 import AddProperty from './components/AddProperty';
-import Cart from './components/Cart';
 import Search from './components/Search'
 
 
