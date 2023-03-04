@@ -18,21 +18,23 @@
 
  .cont1 {
      color: rgb(0, 0, 0);
+     height: 80px;
+     width: 90%;
      font-family: 'Gloock', serif;
      align-items: center;
      justify-content: center;
      margin: 20px;
      padding: 0;
      margin-right: 10%;
-     margin-top: 40px;
-
+     margin-bottom: 20px;
+    display:inline-block;
  }
 
  ul {
     float: right;
     margin-left: 10px;
           display: flex;
-          font-size: 18px;
+          font-size: 23px;
 
      /* padding: 10px 100px;
      margin: 0;
@@ -47,8 +49,7 @@
      color: rgb(7, 7, 6);
      display: inline-block;
      line-height: 20px;
-     margin: 0px 20px;
-     margin-top: 10px;
+     margin-top:-50px ;
      
 
  }
@@ -82,7 +83,8 @@
     color: black;
     font-weight:lighter;
     float: left;
-    padding: 0 100px;
+    width: 200px;
+    padding: 0 10px;
     cursor: pointer;
      transition: 0.5s;
 }
@@ -134,7 +136,7 @@
 
  .homecontent {
      position: relative;
-     width: 60%;
+     width: 100%;
      display: flex;
      justify-content: center;
      align-items: center;
@@ -144,7 +146,7 @@
 
  .homeinnercont {
      background-color: rgba(0, 0, 0, 0.664);
-     margin-bottom: 120%;
+     margin-bottom: 50%;
      font-family: 'Oranienbaum', serif;
      color: white;
      border-radius: 10px;
@@ -215,23 +217,26 @@
     margin-top: 50px;
     padding-top: 70px;
     padding-bottom: 90px;
+    justify-content:space-around;
+    align-items: center;
  }
  .footercont{
-    width:80%;
-    display:flex;
-    padding-left: 20%;
-    padding-top: 20px;
-    gap: 3rem;
+    display: inline-flex;
+    position: relative;
+
+    /* width:0%; */
+    /* padding-top: 20px; */
+    /* gap: 3rem; */
     font-family: 'Oranienbaum', serif;
     font-family: 'Zilla Slab', serif;
  }
  .footercont h5{
     color: rgb(238, 232, 232);
-    margin-top: 10px;
+    margin-top: 20px;
+    margin-bottom: 55px;
  }
  .footercont p{
     color: black;
-    margin: 10px 10px 10px 40px;
  }
  .footer-title{
     color: black;
