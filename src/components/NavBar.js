@@ -1,12 +1,13 @@
 import { Link } from "react-router-dom";
-// import logo from './images/logo.png';
+import logo from './images/logo3.png'
 
 
 function NavBar (){
     return(
         <div className="cont1">
             <div >
-            <h2 className="header1">MASQANI HEIGHTS</h2>
+                <img src={logo} alt="Logo" style={{width: '100px', height: 'auto'}} />
+            
             </div>
             <nav>
                 <ul>
