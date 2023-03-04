@@ -19,7 +19,6 @@ root.render(
       <Route path='/properties' element={<Properties />}/>
       <Route path='/addproperty' element={<AddProperty />}/>
       <Route path='/search' element={<Search />}/>
-
     </Routes>
   </Router>
   
