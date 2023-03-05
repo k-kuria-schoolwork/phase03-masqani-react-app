@@ -130,26 +130,32 @@ function PropertyList() {
           return house;
         }else if(searchType === "name" && house.name.toLowerCase().includes(searchTerm.toLowerCase())){
           return house;
-        }else if(searchType === "price" && house.price.toLowerCase().includes(searchTerm.toLowerCase())){
+        }else if(searchType === "price" && house.price.toString().toLowerCase().includes(searchTerm.toLowerCase())){
           return house;
         }
       })}  */}
 
-      {filteredHouses.map(house => (
-        <div className="col-4" style={{ marginTop: '30px', borderRadius: '40px' }} key={house.id}>
-          <div className="card" style={{ width: '35rem' }} key={house.id}>
+            {filteredHouses.map((house) => (
+            <div className="col-4" style={{ marginTop: "30px", borderRadius: "40px" }} key={house.id}>
+            <div className="card" style={{ width: "35rem" }} key={house.id}>
             <img width="700" height="500" className="card-img-top" src={house.image_url} alt="House" />
             <div className="card-body">
-              <h5 className="card-title">{house.name}</h5>
-              <p>Price: kshs.{house.price}</p>
-              <p>Address: {house.address}</p>
-              <p>{house.description}</p>
-              <button className="bg-danger" type="button" class="btn btn-danger" style={{ marginRight: '5px' }} onClick={() => deleteHouse(house.id)}>DELETE</button>
-              <button type="button" class="btn btn-secondary" style={{ marginRight: '30px' }} onClick={() => editHouse(house.id)}>Edit</button>
+            <h5 className="card-title">{house.name}</h5>
+            <p>Price: kshs.{house.price}</p>
+            <p>Address: {house.address}</p>
+            <p>{house.description}</p>
+            <button className="bg-danger" type="button" class="btn btn-danger" style={{ marginRight: "5px" }} onClick={() => deleteHouse(house.id)}>
+            DELETE
+            </button>
+            <button type="button" class="btn btn-secondary" style={{ marginRight: "30px" }} onClick={() => editHouse(house.id)}>
+            Edit
+            </button>
             </div>
-          </div>
-        </div>
-      ))}
+            </div>
+            </div>
+            ))}
+
+
     </div>
   </>
   )
