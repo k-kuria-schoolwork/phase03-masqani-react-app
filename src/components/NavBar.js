@@ -5,7 +5,7 @@ import logo from './images/logo3.png'
 function NavBar (){
     return(
         <div className="cont1">
-                  <h2 className="header1">MASQANI HEIGHTS</h2>
+                  <h2 className="header1">MASQANI REALTORS</h2>
             <div >
                 <img src={logo} alt="Logo" style={{width: '100px', height: 'auto'}} />
             </div>
