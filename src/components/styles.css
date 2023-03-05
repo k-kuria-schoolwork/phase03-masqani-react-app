@@ -18,7 +18,7 @@
  }
 
  .cont1 {
-     color: rgb(0, 0, 0);
+     color: rgb(0, 0, 0,0.5);
      height: 80px;
      width: 90%;
      font-family: 'Gloock', serif;
@@ -35,7 +35,7 @@
     float: right;
     margin-left: 10px;
           display: flex;
-          font-size: 23px;
+          font-size: 25px;
 
      /* padding: 10px 100px;
      margin: 0;
@@ -137,7 +137,7 @@
  }
 
  .homecontent {
-    background-color: grey;
+    background-color: rgb(0, 0, 0);
      position: relative;
      width: 100%;
      display: flex;
@@ -148,7 +148,7 @@
  }
 
  .homeinnercont {
-     background-color: none;
+     background-color: rgba(0, 0, 0, 0.664);
      margin-bottom: 50%;
      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
      color: white;
