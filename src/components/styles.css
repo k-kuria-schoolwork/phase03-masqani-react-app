@@ -9,6 +9,7 @@
      padding: 0;
      text-decoration: none;
      list-style: none;
+     
  }
 
  body {
@@ -58,7 +59,8 @@
      text-decoration: none;
      padding: 7px 23px;
      /* margin-top: -10px; */
-     color: rgb(14, 10, 231);
+     color: black;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
      cursor: pointer;
      transition: 0.5s;
  }
@@ -135,6 +137,7 @@
  }
 
  .homecontent {
+    background-color: grey;
      position: relative;
      width: 100%;
      display: flex;
@@ -145,9 +148,9 @@
  }
 
  .homeinnercont {
-     background-color: rgba(0, 0, 0, 0.664);
+     background-color: none;
      margin-bottom: 50%;
-     font-family: 'Oranienbaum', serif;
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
      color: white;
      border-radius: 10px;
 
