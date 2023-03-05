@@ -10,6 +10,8 @@
      text-decoration: none;
      list-style: none;
      
+
+     
  }
 
  body {
@@ -37,13 +39,13 @@
           display: flex;
           font-size: 23px;
 
-     /* padding: 10px 100px;
+     padding: 10px 100px;
      margin: 0;
      display: flex;
      gap: 35px;
      list-style: none;
      font-size: 25px;
-      */
+    
  }
 
  ul li {
@@ -148,7 +150,7 @@
  }
 
  .homeinnercont {
-     background-color: none;
+     background-color: rgba(0, 0, 0, 0.6);
      margin-bottom: 50%;
      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
      color: white;
