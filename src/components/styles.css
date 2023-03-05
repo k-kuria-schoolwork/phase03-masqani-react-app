@@ -297,6 +297,8 @@
 }
 .container h1{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    padding-right: 200px;
 }
 .flex {
     background-color: rgba(0, 0, 0, 0.623);
@@ -344,7 +346,7 @@ form input {
       form input {
         width: 100%;
       }  
-.btn1{
+.btn1 button{
     background-color: #007bff;
     color: #fff;
     border: none;
@@ -353,9 +355,9 @@ form input {
     cursor: pointer;
     font-size: 16px;
     margin-top: 20px;
-    position: fixed;
-    right: 430px;
-    top: 380px;
+    position: absolute;
+    right: 300px;
+    top: 265px;
 }
 
 

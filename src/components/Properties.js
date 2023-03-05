@@ -1,7 +1,8 @@
-import React from "react";
 import {useEffect,useState} from "react"
 function PropertyList() {
   const [houses, setHouses] = useState([]);
+  const [searchTerm, setSearchTerm] = useState('');
+  const [searchType, setSearchType] = useState('name');
 
   useEffect(() => {
     fetch('http://localhost:3000/data')
@@ -70,15 +71,77 @@ function PropertyList() {
       });
   };
 
+  const filteredHouses = houses.filter(house => {
+    if(searchType === 'name'){
+      return house.name.toLowerCase().includes(searchTerm.toLowerCase());
+    }else if(searchType === 'price'){
+      return house.price === parseFloat(searchTerm);
+    }else{
+      return true;
+    }
+  });
+
   return (
+    <>
+
+<section className='hero'>
+            <div className='container'>
+              <h1>Search For Your Next Home</h1>  
+            
+              <form className='flex'>
+                <div className='box'>
+                  <span>Location Address</span>
+                  <input type='text' placeholder='Enter the location Address' onChange={(event) => {
+                    setSearchType('name');
+                  }} />
+                </div>
+                {/* <div className='box'>
+                  <span>Property Type</span>
+                  <input type='text' placeholder='Property Type' />
+                  <select id="inputState" class="form-select">
+                  <option selected>Choose...</option>
+                  <option>Apartment</option>data
+                  <option>Townhouses</option>
+                  <option>Condos</option>
+                  <option>Mansions</option>
+                  <option>Cottage</option>
+                  </select>
+                </div> */}
+                <div className='box'>
+                  <span>Price</span>
+                  <input type='number' placeholder='Enter the price' min='0' onChange={(event) => {
+                    setSearchTerm('');
+                  }}/>
+                </div>
+                <div>
+                <div className='btn1'>
+                  <button>
+                  Search
+                </button>
+                </div>
+                </div>
+              </form>
+            </div>
+          </section>
+      
     <div className="card-row " width="700" height="500" style={{ display: 'flex', borderRadius: '40px', flexWrap: 'wrap' }}>
-      {houses.map(house => (
-        <div className="col-4" style={{ marginTop: '30px', borderRadius: '40px' }}>
+       {/* {houses.filter((house) => {
+        if(searchTerm == ""){
+          return house;
+        }else if(searchType === "name" && house.name.toLowerCase().includes(searchTerm.toLowerCase())){
+          return house;
+        }else if(searchType === "price" && house.price.toLowerCase().includes(searchTerm.toLowerCase())){
+          return house;
+        }
+      })}  */}
+
+      {filteredHouses.map(house => (
+        <div className="col-4" style={{ marginTop: '30px', borderRadius: '40px' }} key={house.id}>
           <div className="card" style={{ width: '35rem' }} key={house.id}>
             <img width="700" height="500" className="card-img-top" src={house.image_url} alt="House" />
             <div className="card-body">
               <h5 className="card-title">{house.name}</h5>
-              <p>Price: {house.price}</p>
+              <p>Price: kshs.{house.price}</p>
               <p>Address: {house.address}</p>
               <p>{house.description}</p>
               <button className="bg-danger" type="button" class="btn btn-danger" style={{ marginRight: '5px' }} onClick={() => deleteHouse(house.id)}>DELETE</button>
@@ -88,7 +151,8 @@ function PropertyList() {
         </div>
       ))}
     </div>
-  );
+  </>
+  )
 }
 
 export default PropertyList;
