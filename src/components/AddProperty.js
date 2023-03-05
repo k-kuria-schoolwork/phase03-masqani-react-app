@@ -8,23 +8,18 @@ function AddProperty(){
     city:"",
     address:"",
     price:"",
+    type:"",
   },[])
 
 
   //post method to send new data to server
-  function submit(e){
+  function handleSubmit(e){
     e.preventDefault();
-    fetch( {
-      name:addProp.name,
-      number:addProp.number,
-      city:addProp.city,
-      address:addProp.address,
-      price:addProp.price,
-    })
+    console.log(addProp)
   }
 
 
-  function handle(e){
+  function handleInput(e){
     const newprop={...addProp}
     newprop[e.target.id] = e.target.value
     setAddProp(newprop)
@@ -39,28 +34,28 @@ function AddProperty(){
              </div>
             <div className="formcont">
           
-            <form onSubmit={(e)=>submit(e)} class="row g-3">
+            <form onSubmit={(e)=>handleSubmit(e)} class="row g-3">
             <div class="col-md-5">
     <label for="inputAddress" class="form-label">Agent Name</label>
-    <input onChange={(e)=>handle(e)} id="name"value={addProp.name} type="text" class="form-control"  placeholder="Kamau Njiruu"/>
+    <input onChange={(e)=>handleInput(e)} id="name"value={addProp.name} type="text" class="form-control"  placeholder="Kamau Njiruu"/>
   </div>
 
   <div class="col-md-4">
     <label for="inputAddress2" class="form-label">Agent Number</label>
-    <input onChange={(e)=>handle(e)} id="number"value={addProp.number} type="number" class="form-control"placeholder="0734*******"/>
+    <input onChange={(e)=>handleInput(e)} id="number"value={addProp.number} type="number" class="form-control"placeholder="0734*******"/>
   </div>
 
   <div class="col-md-5">
     <label for="inputAddress2" class="form-label">Home Address</label>
-    <input onChange={(e)=>handle(e)} id="address"value={addProp.address} type="text" class="form-control"  placeholder="kinoo, z-corner"/>
+    <input onChange={(e)=>handleInput(e)} id="address"value={addProp.address} type="text" class="form-control"  placeholder="kinoo, z-corner"/>
   </div>
   <div class="col-md-4">
     <label for="inputAddress" class="form-label">Price</label>
-    <input onChange={(e)=>handle(e)} id="price"value={addProp.price} type="number" class="form-control"  placeholder="$ 1000"/>
+    <input onChange={(e)=>handleInput(e)} id="price" value={addProp.price} type="number" class="form-control"  placeholder="$ 1000"/>
   </div>
   <div class="col-md-5">
     <label for="inputState" class="form-label">Property type</label>
-    <select id="inputState" class="form-select">
+    <select onChange={(e)=>handleInput(e)}  id="inputState" value={addProp.type} class="form-select">
       <option selected>Choose...</option>
       <option>Apartment</option>data
       <option>Townhouses</option>
