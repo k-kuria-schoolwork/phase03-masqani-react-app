@@ -1,6 +1,11 @@
 import React, { useState } from "react"
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function AddProperty(){
+
+  const notify = () => toast.info("Property added successfully!",{position:"bottom-right",theme:"dark",});
+
 
   const [addProp, setAddProp] = useState({
     name:"",
@@ -8,7 +13,7 @@ function AddProperty(){
     city:"",
     address:"",
     price:"",
-    type:"",
+    description:"",
   },[])
 
 
@@ -53,33 +58,17 @@ function AddProperty(){
     <label for="inputAddress" class="form-label">Price</label>
     <input onChange={(e)=>handleInput(e)} id="price" value={addProp.price} type="number" class="form-control"  placeholder="$ 1000"/>
   </div>
+  
   <div class="col-md-5">
-    <label for="inputState" class="form-label">Property type</label>
-    <select onChange={(e)=>handleInput(e)}  id="inputState" value={addProp.type} class="form-select">
-      <option selected>Choose...</option>
-      <option>Apartment</option>data
-      <option>Townhouses</option>
-      <option>Condos</option>
-      <option>Mansions</option>
-      <option>Cottage</option>
-    </select>
-  </div>
-  <div class="col-md-4">
-    <label for="inputState" class="form-label">Insuarance type</label>
-    <select id="inputState" class="form-select">
-      <option selected>Choose...</option>
-      <option>Homeowners insurance</option>
-      <option>Condo insurance</option>
-      <option>Landlord insurance</option>
-      
-    </select>
-  </div>
+  <label for="exampleFormControlTextarea1" class="form-label">Property description</label>
+  <textarea onChange={(e)=>handleInput(e)} class="form-control" id="exampleFormControlTextarea1" value={addProp.description} rows="3" placeholder="2-bedroom, open kitchen"></textarea>
+</div>
+  
   
   
   <div class="col-12">
-  </div>
-  <div class="col-12">
-    <button type="submit" class="btn btn-primary">Add property</button>
+    <button type="submit" onClick={notify} class="btn btn-primary">Add property</button>
+  <ToastContainer />
   </div>
 </form>
             </div>
