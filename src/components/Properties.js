@@ -1,104 +1,94 @@
-import React, { useState, useEffect } from 'react';
-
+import React from "react";
+import {useEffect,useState} from "react"
 function PropertyList() {
-  const [arts, setArts] = useState([]);
-
+  const [houses, setHouses] = useState([]);
 
   useEffect(() => {
     fetch('http://localhost:3000/data')
       .then(response => response.json())
-      .then(houses => setArts(houses));
-      
+      .then(houses => setHouses(houses));
   }, []);
 
-  const deleteArt = artId => {
-    // Remove the art object from the array
-    setArts(arts.filter(s => s.id !== artId));
-  
-    // Send a DELETE request to the Unsplash API
-    fetch(`http://localhost:3000/data${artId}`, {
+  const deleteHouse = id => {
+    fetch(`http://localhost:3000/data/${id}`, {
       method: 'DELETE',
       headers: {
-        'Authorization': 'Client-ID vPrE9gEumlnowpP4lpOeqV4tLUiZZ021myr-Atr-RyA'
-      }
-    })
-    .then(response => {
-      if (!response.ok) {
-        throw new Error('Failed to delete art object.');
-      }
-    })
-    .catch(error => {
-      console.error(error);
-    });
-  
-
-  }
-
-  const editArt = artId => {
-    // Find the art object with the matching ID
-    const art = arts.find(s => s.id === artId);
-  
-    // Prompt the user to enter new values for each field
-    const newTitle = prompt('Enter a new title for the art object:', art.title);
-    const newDescription = prompt('Enter a new description for the art object:', art.description);
-    const newImageUrl = prompt('Enter a new image URL for the art object:', art.imageUrl);
-  
-    // Update the art object with the new values
-    const updatedArt = {
-      ...art,
-      title: newTitle,
-      description: newDescription,
-      imageUrl: newImageUrl
-    };
-  
-    // Replace the old art object with the updated one in the array
-    const updatedArts = arts.map(s => s.id === artId ? updatedArt : s);
-    setArts(updatedArts);
-  
-    // Send a PUT request to the Unsplash API with the updated art object
-    fetch(`https://api.unsplash.com/photos/${artId}`, {
-      method: 'PUT',
-      headers: {
-        'Authorization': 'Client-ID vPrE9gEumlnowpP4lpOeqV4tLUiZZ021myr-Atr-RyA',
         'Content-Type': 'application/json'
       },
-      body: JSON.stringify(updatedArt)
     })
-    .then(response => {
-      if (!response.ok) {
-        throw new Error('Failed to update art object.');
-      }
-    })
-    .catch(error => {
-      console.error(error);
-    });
+      .then(response => {
+        if (response.ok) {
+          setHouses(houses => houses.filter(house => house.id !== id));
+        }
+      })
+      .catch(error => {
+        console.error(error);
+      });
   };
 
-  
+  const editHouse = houseId => {
+    // Find the house object with the matching ID
+    const house = houses.find(house => house.id === houseId);
+
+    // Prompt the user to enter new values for each field
+    const newTitle = prompt('Enter a new title for the house:', house.title);
+    const newDescription = prompt('Enter a new description for the house:', house.description);
+    const newImageUrl = prompt('Enter a new image URL for the house:', house.image_url);
+    const newPrice = prompt('Enter a new price for the house:', house.price);
+
+    // Create the updated house object
+    const updatedHouse = {
+      ...house,
+      name: newTitle || house.title,
+      description: newDescription || house.description,
+      image_url: newImageUrl || house.image_url,
+      price: newPrice || house.price,
+    };
+
+    // Send a PUT request to the backend API with the updated house object
+    fetch(`http://localhost:3000/data/${houseId}`, {
+      method: 'PUT',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(updatedHouse)
+    })
+      .then(response => {
+        if (response.ok) {
+          setHouses(houses => {
+            const updatedHouses = [...houses];
+            const index = updatedHouses.findIndex(house => house.id === houseId);
+            updatedHouses[index] = updatedHouse;
+            return updatedHouses;
+          });
+        } else {
+          console.log('Failed to update house object');
+        }
+      })
+      .catch(error => {
+        console.error(error);
+      });
+  };
 
   return (
-    <div className="card-row "width="700" height="500" style={{ display: 'flex', borderRadius:'40px', flexWrap:"wrap"}}>
-      
-      {arts.map((art,index) => (
-        <div className='col-4' style={{marginTop: '30px', borderRadius:'40px'}}>
-        <div className="card " style={{ width: '35rem'}} key={index}>
-          <img width="700" height="500"className="card-img-top" src={art.image_url} alt="House" />
-          <div className="card-body">
-            <h5 className="card-title">{art.name}</h5>
-            <p>Price: {art.price}</p>
-            <p>Address: {art.address}</p>
-            <p>{art.description}</p>
-            {/* <Link to="/art/:id" component={ParticularProperty} style = {{color: 'white'}}>View Details</Link> */}
-            <button className="bg-danger" type="button" class="btn btn-danger"style={{marginRight: '5px'}} onClick={() => deleteArt(art.id)}>DELETE</button>
-            <button type="button" class="btn btn-secondary"style={{marginRight: '30px'}}onClick={() => editArt(art.id)}>Edit</button> 
+    <div className="card-row " width="700" height="500" style={{ display: 'flex', borderRadius: '40px', flexWrap: 'wrap' }}>
+      {houses.map(house => (
+        <div className="col-4" style={{ marginTop: '30px', borderRadius: '40px' }}>
+          <div className="card" style={{ width: '35rem' }} key={house.id}>
+            <img width="700" height="500" className="card-img-top" src={house.image_url} alt="House" />
+            <div className="card-body">
+              <h5 className="card-title">{house.name}</h5>
+              <p>Price: {house.price}</p>
+              <p>Address: {house.address}</p>
+              <p>{house.description}</p>
+              <button className="bg-danger" type="button" class="btn btn-danger" style={{ marginRight: '5px' }} onClick={() => deleteHouse(house.id)}>DELETE</button>
+              <button type="button" class="btn btn-secondary" style={{ marginRight: '30px' }} onClick={() => editHouse(house.id)}>Edit</button>
+            </div>
           </div>
         </div>
-        </div>
       ))}
-      
     </div>
-    
   );
-      }
+}
 
 export default PropertyList;
