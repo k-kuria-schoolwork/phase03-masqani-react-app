@@ -5,13 +5,13 @@ function PropertyList() {
   const [searchType, setSearchType] = useState('name');
 
   useEffect(() => {
-    fetch('http://localhost:3000/data')
+    fetch('http://localhost:9292/')
       .then(response => response.json())
       .then(houses => setHouses(houses));
   }, []);
 
   const deleteHouse = id => {
-    fetch(`http://localhost:3000/data/${id}`, {
+    fetch(`http://localhost:9292/property/${id}`, {
       method: 'DELETE',
       headers: {
         'Content-Type': 'application/json'
@@ -47,7 +47,7 @@ function PropertyList() {
     };
 
     // Send a PUT request to the backend API with the updated house object
-    fetch(`http://localhost:3000/data/${houseId}`, {
+    fetch(`http://localhost:9292/property/update/${houseId}`, {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json'
