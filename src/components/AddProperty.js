@@ -1,12 +1,19 @@
 import React, { useState } from "react"
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { useNavigate } from "react-router-dom";
+
 
 function AddProperty(){
+ // navigator
+  let navigator = useNavigate();
 
+  //alert
   const notify = () => toast.info("Property added successfully!",{position:"bottom-right",theme:"dark",});
 
 
+
+ // useState to hold new event data from user
   const [addProp, setAddProp] = useState({
     name:"",
     number:"",
@@ -16,14 +23,6 @@ function AddProperty(){
     description:"",
   },[])
 
-
-  //post method to send new data to server
-  function handleSubmit(e){
-    e.preventDefault();
-    console.log(addProp)
-  }
-
-
   function handleInput(e){
     const newprop={...addProp}
     newprop[e.target.id] = e.target.value
@@ -31,6 +30,32 @@ function AddProperty(){
     console.log(newprop)
 
   }
+
+  //post method to send new data to server
+  function handleSubmit(e){
+    e.preventDefault();
+    const newprop = {
+      name:addProp.name,
+      number: addProp.number,
+      address: addProp.address,
+      price: addProp.price,
+      description: addProp.description,
+    }
+
+    fetch("",{
+      method:"POST",
+      // headers:{
+      //   "Content-type:"application/json",
+      // },
+      body:JSON.stringify(newprop)
+    })
+    .then((res)=> res.json)
+    .then((newEnv) =>onAdd(newEnv))
+    navigator("/properties")
+  }
+
+
+
     return(
       
         <div className="formcont1">
@@ -60,7 +85,7 @@ function AddProperty(){
   </div>
   
   <div class="col-md-5">
-  <label for="exampleFormControlTextarea1" class="form-label">Propertyyyyyy description</label>
+  <label for="exampleFormControlTextarea1" class="form-label">Property description</label>
   <textarea onChange={(e)=>handleInput(e)} class="form-control" id="description" value={addProp.description} rows="3" placeholder="2-bedroom, open kitchen"></textarea>
 </div>
   
