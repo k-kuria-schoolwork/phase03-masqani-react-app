@@ -4,14 +4,14 @@ function PropertyList() {
   const [houses, setHouses] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:9292/')
+    fetch('https://phase-3-masqani-sinatra-backend-production.up.railway.app/')
       .then(response => response.json())
       .then(data => setHouses(data))
       .catch(error => console.error(error));
   }, []);
 
   const deleteHouse = id => {
-    fetch(`http://localhost:9292/property/${id}`, {
+    fetch(`https://phase-3-masqani-sinatra-backend-production.up.railway.app//property/${id}`, {
       method: 'DELETE',
       headers: {
         'Content-Type': 'application/json'
@@ -44,7 +44,7 @@ function PropertyList() {
     };
 
     // Send a PUT request to the backend API with the updated house object
-    fetch(`http://localhost:9292//${houseId}`, {
+    fetch(`https://phase-3-masqani-sinatra-backend-production.up.railway.app/${houseId}`, {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json'
