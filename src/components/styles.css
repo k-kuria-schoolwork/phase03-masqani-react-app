@@ -62,7 +62,8 @@
      padding: 7px 23px;
      /* margin-top: -10px; */
      color: black;
-     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     font-family: 'Gloock', serif;
+     font-weight:normal;
      cursor: pointer;
      transition: 0.5s;
  }
@@ -163,6 +164,7 @@
      gap: 2rem;
      font-size: 45px;
      margin-right: 15%;
+     
  }
 
  .P1 {
@@ -195,6 +197,8 @@
      font-family: 'Gloock', serif;
      font-size: 50px;
      margin-left: 30px;
+     text-decoration:underline rgba(184, 188, 199, 0.534);
+
 
  }
 
@@ -371,10 +375,12 @@ form input {
     font-size: 20px;
     font-family: 'Oranienbaum', serif;
     font-family: 'Zilla Slab', serif;
+    
 }
 .awards p{
     color: black;
     font-size: 30px;
+    
 }
 
 .copyright{
