@@ -60,8 +60,8 @@ function AddProperty(){
   </div>
   
   <div class="col-md-5">
-  <label for="exampleFormControlTextarea1" class="form-label">Property description</label>
-  <textarea onChange={(e)=>handleInput(e)} class="form-control" id="exampleFormControlTextarea1" value={addProp.description} rows="3" placeholder="2-bedroom, open kitchen"></textarea>
+  <label for="exampleFormControlTextarea1" class="form-label">Propertyyyyyy description</label>
+  <textarea onChange={(e)=>handleInput(e)} class="form-control" id="description" value={addProp.description} rows="3" placeholder="2-bedroom, open kitchen"></textarea>
 </div>
   
   
