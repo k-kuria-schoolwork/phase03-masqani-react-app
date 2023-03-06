@@ -7,7 +7,7 @@ import { BrowserRouter as Router,Routes,Route } from 'react-router-dom';
 import Properties from './components/Properties'
 import NavBar from './components/NavBar';
 import AddProperty from './components/AddProperty';
-import Search from './components/Search'
+
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -18,7 +18,6 @@ root.render(
       <Route path='/' element={<App />}/>
       <Route path='/properties' element={<Properties />}/>
       <Route path='/addproperty' element={<AddProperty />}/>
-      <Route path='/search' element={<Search />}/>
     </Routes>
   </Router>
   

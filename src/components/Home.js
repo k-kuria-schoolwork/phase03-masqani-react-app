@@ -108,8 +108,8 @@ function Home(){
                     </h5> 
                     <h5>CONTACT INFO
                     <p> Get in touch through our social media platforms</p>
-                    <p><span>Instagram@</span>maQani_heights </p>
-                    <p><span>Twitter@ </span> maQani_heights </p>
+                    <p><span>Instagram@</span>masQani_heights </p>
+                    <p><span>Twitter@ </span> masQani_heights </p>
                     </h5>
                     <h5>chat with us  throgh email and phone number
                     <p><span>Phone </span>+2766-456-773 </p>
