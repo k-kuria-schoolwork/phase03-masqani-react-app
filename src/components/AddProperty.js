@@ -42,16 +42,16 @@ function AddProperty(){
       description: addProp.description,
     }
 
-    fetch("",{
-      method:"POST",
-      // headers:{
-      //   "Content-type:"application/json",
-      // },
-      body:JSON.stringify(newprop)
-    })
-    .then((res)=> res.json)
-    .then((newEnv) =>onAdd(newEnv))
-    navigator("/properties")
+    // fetch("",{
+    //   method:"POST",
+    //   // headers:{
+    //   //   "Content-type:"application/json",
+    //   // },
+    //   body:JSON.stringify(newprop)
+    // })
+    // .then((res)=> res.json)
+    // .then((newEnv) =>onAdd(newEnv))
+    // navigator("/properties")
   }
 
 
